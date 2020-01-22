@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Matree Registration</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>Matree Registration</a></h1>
+		<form class="appnitro"  method="post" action="submit.php">
+					<div class="form_description">
+			<h2>Matree Registration</h2>
+			<p></p>
+		</div>						
+			<ul >
+			
+					<li>
+		<label class="description" for="element_1">College Name </label>
+		<div>
+			<input required id="element_1" name="college_name" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="guidelines" id="guide_1"><small>College or University Name</small></p>
+		</li>		<li>
+		<label class="description" for="element_2">Email </label>
+		<div>
+			<input required id="element_2" name="email" class="element text medium" type="email"/> 
+		</div><p class="guidelines" id="guide_1"><small>Email</small></p> 
+		</li>		<li>
+		<label class="description" for="element_3">Contact </label>
+		<div>
+			<input required id="element_3" name="contact" class="element text medium" type="tel"/> 
+		</div><p class="guidelines" id="guide_1"><small>Phone Number</small></p>
+		</li>		<li>
+		<label class="description" for="element_8">Events </label>
+		<span>
+<input id="element_8_1" name="Events[]" class="element checkbox" type="checkbox" value="Athletics" />
+<label class="choice" for="element_8_1">Athletics</label>
+<input id="element_8_2" name="Events[]" class="element checkbox" type="checkbox" value="Badminton" />
+<label class="choice" for="element_8_2">Badminton</label>
+<input id="element_8_3" name="Events[]" class="element checkbox" type="checkbox" value="Basketball" />
+<label class="choice" for="element_8_3">Basketball</label>
+<input id="element_8_4" name="Events[]" class="element checkbox" type="checkbox" value="Chess" />
+<label class="choice" for="element_8_4">Chess</label>
+<input id="element_8_5" name="Events[]" class="element checkbox" type="checkbox" value="Cricket" />
+<label class="choice" for="element_8_5">Cricket</label>
+<input id="element_8_6" name="Events[]" class="element checkbox" type="checkbox" value="Dead Lift" />
+<label class="choice" for="element_8_6">Dead Lift</label>
+<input id="element_8_7" name="Events[]" class="element checkbox" type="checkbox" value="Football" />
+<label class="choice" for="element_8_7">Football</label>
+<input id="element_8_8" name="Events[]" class="element checkbox" type="checkbox" value="Futsal" />
+<label class="choice" for="element_8_8">Futsal</label>
+<input id="element_8_9" name="Events[]" class="element checkbox" type="checkbox" value="Handball" />
+<label class="choice" for="element_8_9">Handball</label>
+<input id="element_8_10" name="Events[]" class="element checkbox" type="checkbox" value="Kabbadi" />
+<label class="choice" for="element_8_10">Kabbadi</label>
+<input id="element_8_11" name="Events[]" class="element checkbox" type="checkbox" value="Table Tennis" />
+<label class="choice" for="element_8_11">Table Tennis</label>
+<input id="element_8_12" name="Events[]" class="element checkbox" type="checkbox" value="Tug of War" />
+<label class="choice" for="element_8_12">Tug of War</label>
+<input id="element_8_13" name="Events[]" class="element checkbox" type="checkbox" value="Volleyball" />
+<label class="choice" for="element_8_13">Volleyball</label>
+
+		</span> <p class="guidelines" id="guide_1"><small>Check on all that apply</small></p>
+		</li>		<li>
+		<label class="description" for="element_4">No of Participants(Boys) </label>
+		<div>
+			<input required id="element_4" name="nop_b" class="element text medium" type="number" min="0" max="255"/> 
+		</div><p class="guidelines" id="guide_1"><small>Enter 0 if none</small></p> 
+		</li>		<li>
+		<label class="description" for="element_5">No of Participants(Girls) </label>
+		<div>
+			<input required id="element_5" name="nop_g" class="element text medium" type="number" min="0" max="255"/> 
+		</div><p class="guidelines" id="guide_1"><small>Enter 0 if none</small></p>
+		</li>		<li>
+		<label class="description" for="element_9">Do you want Accommodation ? </label>
+		<span>
+<input required id="element_9_1" name="Accommodation" class="element radio" type="radio" value="Yes" />
+<label class="choice" for="element_9_1">Yes</label>
+<input id="element_9_2" name="Accommodation" class="element radio" type="radio" value="No" />
+<label class="choice" for="element_9_2">No</label>
+
+		</span><p class="guidelines" id="guide_1"><small>Do you want Accommodation provided by the University</small></p>
+		</li>		<li class="section_break">
+			<h3><input required class="element checkbox" type="checkbox" /><label class="choice">I understand that I will have to pay Rs. 200 upon the completion of registration.
+			</br>* This money is to assure that my college will be participating in your event .</br>* Non-refundable</h3>
+			<p></p>
+		</li>		<li>
+		<label class="description" for="element_7">Amount </label>
+		<span class="symbol">&#8377;</span>
+		<span>
+			<input id="element_7" name="element_7" class="element text currency" size="10" value="200" disabled type="text" />	
+			<label for="element_7">INR</label>
+		</span>
+		<p class="guidelines" id="guide_7"><small>Rs. 200 per Registration</small></p>
+		</li>
+			
+					<li class="buttons">
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+		<div id="footer">
+			Generated by <a href="https://www.linkedin.com/in/harshit-s/">Harshit</a>
+		</div>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+</html>
